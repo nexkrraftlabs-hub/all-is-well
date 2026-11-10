@@ -29,7 +29,7 @@
           <span class="logo__sub">Physiotherapy &amp; Rehab</span>
         </span>
       </a>
-      <p style="margin-top:14px;font-size:14px;line-height:22px;color:rgba(255,255,255,0.75)">Rated <strong>5.0 ★</strong> (184+ web ratings) &amp; <strong>4.9 ★</strong> (70+ Google reviews). Expert care by Dr. Swati &amp; Dr. Akhilesh.</p>
+      <p style="margin-top:14px;font-size:14px;line-height:22px;color:rgba(255,255,255,0.75)">Rated <strong>5.0 ★</strong> (184+ Google reviews) &amp; <strong>4.9 ★</strong> (70+ Justdial ratings). Expert care by Dr. Swati &amp; Dr. Akhilesh.</p>
       <div class="footer-news" style="margin-top:20px">
         <p class="footer-title">Newsletter Signup</p>
         <p class="footer-note">Stay up to date with physiotherapy tips, injury recovery guides, and clinic updates.</p>
@@ -41,7 +41,7 @@
         </form>
       </div>
     </div>
-    <div class="footer-col"><p class="footer-title">Quick Links</p><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="about.html#team">Meet the Doctors</a></li><li><a href="services.html">Services &amp; Therapies</a></li><li><a href="index.html#reviews">Patient Reviews</a></li><li><a href="index.html#faq">FAQs</a></li><li><a href="contact.html">Contact &amp; Locations</a></li></ul></div>
+    <div class="footer-col"><p class="footer-title">Quick Links</p><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="about.html#team">Meet the Doctors</a></li><li><a href="services.html">Services &amp; Therapies</a></li><li><a href="index.html#reviews">Patient Reviews</a></li><li><a href="index.html#faq">FAQs</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Care</a></li><li><a href="contact.html">Contact &amp; Locations</a></li></ul></div>
     <div class="footer-col"><p class="footer-title">Clinic Hours</p><ul class="hours"><li><span>Mon – Sat:</span><span>Closes 9:00 PM</span></li><li><span>Sunday:</span><span>Call for timings</span></li></ul>
       <p style="margin-top:16px;font-size:13px;color:rgba(255,255,255,0.65)">Emergency &amp; home consultation support available on request.</p>
     </div>
@@ -55,7 +55,7 @@
   <div class="footer-bottom">
     <div class="container footer-bottom__inner">
       <p>Copyright © 2026 All Is Well Physiotherapy &amp; Rehabilitation Centre. All Rights Reserved.</p>
-      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Care</a><a href="#">Accessibility</a></div>
+      <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Care</a><a href="#">Accessibility</a></div>
       <img class="footer-social" src="assets/img/footer-social.svg" alt="Social media icons" width="128" height="16">
     </div>
   </div>
