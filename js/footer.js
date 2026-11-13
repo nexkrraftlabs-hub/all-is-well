@@ -7,7 +7,7 @@
   <div class="cta-band">
     <div class="cta-band__item">
       <h2>Book Your Consultation</h2>
-      <p>Consult Dr. Swati &amp; Dr. Akhilesh for personalized physiotherapy &amp; sports injury rehabilitation in Lucknow. Quick booking &amp; compassionate care.</p>
+      <p>Consult Dr. Swati Saxena (MPT Neurology, Gold Medalist) &amp; Dr. Akhilesh Gupta (MPT Musculoskeletal) for advanced neurological, spine &amp; physical rehabilitation in Lucknow.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <a class="btn btn--outline-light btn--sm" href="contact.html">Book Appointment</a>
         <a class="btn btn--light btn--sm" href="tel:+917985381733">Call: +91 79853 81733</a>
@@ -15,8 +15,8 @@
     </div>
     <div class="cta-band__item">
       <h2>Visit Our Clinic in Lucknow</h2>
-      <p><strong>Location:</strong> Near Saisoveer Mandir, Manas Nagar, Lucknow, Uttar Pradesh.</p>
-      <a class="btn btn--outline-light btn--sm" href="https://www.google.com/maps/search/?api=1&amp;query=All+Is+Well+Near+Saisoveer+Mandir+Manas+Nagar+Lucknow" target="_blank" rel="noopener">Get Directions</a>
+      <p><strong>Address:</strong> Shop No. M-7, Vrindavan Complex, Infront of Saisoveer Mandir, Krishna Nagar, Lucknow - 226023.<br><strong>Timings:</strong> Morning: 09:00 AM – 01:00 PM | Evening: 05:00 PM – 09:00 PM</p>
+      <a class="btn btn--outline-light btn--sm" href="https://www.google.com/maps/search/?api=1&amp;query=All+Is+Well+Physiotherapy+Vrindavan+Complex+Krishna+Nagar+Lucknow" target="_blank" rel="noopener">Get Directions</a>
     </div>
   </div>
   <div class="cta-band__rule" aria-hidden="true"></div>
@@ -26,13 +26,13 @@
         <img src="assets/img/logo.png" alt="All Is Well Physiotherapy &amp; Rehabilitation Centre" width="56" height="56">
         <span class="logo__brand">
           <span class="logo__name">ALL IS WELL</span>
-          <span class="logo__sub">Physiotherapy &amp; Rehab</span>
+          <span class="logo__sub">Neuro, Spine &amp; Rehab</span>
         </span>
       </a>
-      <p style="margin-top:14px;font-size:14px;line-height:22px;color:rgba(255,255,255,0.75)">Rated <strong>5.0 ★</strong> (184+ Google reviews) &amp; <strong>4.9 ★</strong> (70+ Justdial ratings). Expert care by Dr. Swati &amp; Dr. Akhilesh.</p>
+      <p style="margin-top:14px;font-size:14px;line-height:22px;color:rgba(255,255,255,0.75)">Rated <strong>5.0 ★</strong> (184+ web ratings) &amp; <strong>4.9 ★</strong> (70+ Google reviews). Expert neurological &amp; spine care by Dr. Swati Saxena &amp; Dr. Akhilesh Gupta.</p>
       <div class="footer-news" style="margin-top:20px">
-        <p class="footer-title">Newsletter Signup</p>
-        <p class="footer-note">Stay up to date with physiotherapy tips, injury recovery guides, and clinic updates.</p>
+        <p class="footer-title">Health &amp; Recovery Updates</p>
+        <p class="footer-note">Receive expert tips on stroke recovery, spine health, ergonomics, and rehabilitation.</p>
         <form class="news-form" data-form data-success="Subscribed. Thank you!" novalidate>
           <label class="sr-only" for="news-email">Email address</label>
           <input class="field" id="news-email" name="newsletter_email" type="email" placeholder="Email address" required autocomplete="email">
@@ -41,14 +41,19 @@
         </form>
       </div>
     </div>
-    <div class="footer-col"><p class="footer-title">Quick Links</p><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="about.html#team">Meet the Doctors</a></li><li><a href="services.html">Services &amp; Therapies</a></li><li><a href="index.html#reviews">Patient Reviews</a></li><li><a href="index.html#faq">FAQs</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Care</a></li><li><a href="contact.html">Contact &amp; Locations</a></li></ul></div>
-    <div class="footer-col"><p class="footer-title">Clinic Hours</p><ul class="hours"><li><span>Mon – Sat:</span><span>Closes 9:00 PM</span></li><li><span>Sunday:</span><span>Call for timings</span></li></ul>
-      <p style="margin-top:16px;font-size:13px;color:rgba(255,255,255,0.65)">Emergency &amp; home consultation support available on request.</p>
+    <div class="footer-col"><p class="footer-title">Specialized Treatments</p><ul><li><a href="services.html#neuro">Neurological Physiotherapy</a></li><li><a href="services.html#spinal">Spinal Physiotherapy</a></li><li><a href="services.html#manual">Manual Therapy</a></li><li><a href="services.html#pediatric">Pediatric Physiotherapy</a></li><li><a href="services.html#women">Female / Women's Health</a></li><li><a href="services.html#modalities">Modalities &amp; Facilities</a></li><li><a href="about.html#team">Meet Our Doctors</a></li><li><a href="contact.html">Contact &amp; Timings</a></li></ul></div>
+    <div class="footer-col"><p class="footer-title">Clinic Timings</p>
+      <ul class="hours">
+        <li><span>Morning:</span><span>09:00 AM – 01:00 PM</span></li>
+        <li><span>Evening:</span><span>05:00 PM – 09:00 PM</span></li>
+        <li><span>Sunday:</span><span>By Appointment</span></li>
+      </ul>
+      <p style="margin-top:16px;font-size:13px;color:rgba(255,255,255,0.65)">Emergency assistance &amp; specialized home consultations available on request.</p>
     </div>
     <div class="footer-col"><p class="footer-title">Contact &amp; Location</p>
       <ul class="footer-contact">
-        <li><img src="assets/img/footer-phone.svg" alt="" width="13" height="13"><div><a href="tel:+917985381733">+91 79853 81733</a><br><a href="tel:07942700816">07942700816</a></div></li>
-        <li class="is-address"><img src="assets/img/footer-pin.svg" alt="" width="11" height="15"><span>Near Saisoveer Mandir, Manas Nagar, Lucknow, Uttar Pradesh</span></li>
+        <li><img src="assets/img/footer-phone.svg" alt="" width="13" height="13"><div><a href="tel:+917985381733">+91 79853 81733</a><br><a href="tel:+918299056618">+91 82990 56618</a></div></li>
+        <li class="is-address"><img src="assets/img/footer-pin.svg" alt="" width="11" height="15"><span>Shop No. M-7, Vrindavan Complex, Infront of Saisoveer Mandir, Krishna Nagar, Lucknow - 226023</span></li>
       </ul>
     </div>
   </div>
