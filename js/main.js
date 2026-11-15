@@ -32,7 +32,7 @@
         toggle.focus();
       }
     });
-    window.matchMedia("(min-width: 1101px)").addEventListener("change", function (e) {
+    window.matchMedia("(min-width: 1181px)").addEventListener("change", function (e) {
       if (e.matches) setMenu(false);
     });
   }
