@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clinic Photo Gallery — All Is Well Physiotherapy &amp; Rehabilitation Centre</title>
+  <meta name="description" content="Explore real photos of our modern clinic facilities, advanced electrotherapy modalities, spinal traction beds, and consultation rooms at All Is Well Physiotherapy Centre, Krishna Nagar, Lucknow.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .gallery-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 28px;
+    }
+    .filter-btn {
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      color: #334155;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .filter-btn:hover,
+    .filter-btn.is-active {
+      background: #2aa338;
+      border-color: #2aa338;
+      color: #ffffff;
+    }
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      backdrop-filter: blur(4px);
+    }
+    .lightbox.is-open {
+      display: flex;
+    }
+    .lightbox__content {
+      max-width: 92vw;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .lightbox__img {
+      max-width: 100%;
+      max-height: 78vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    .lightbox__caption {
+      margin-top: 14px;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+    }
+    .lightbox__close {
+      position: absolute;
+      top: -42px;
+      right: 0;
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 32px;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="site-navbar"></div>
+<main id="main">
+
+<!-- Page Hero -->
+<section class="hero hero--page hero--page-title hero--tint">
+  <img class="hero__bg" src="assets/img/clinic/clinic-22.jpg" alt="All Is Well Clinic Facility" width="1440" height="554" fetchpriority="high">
+  <div class="logo-glow" aria-hidden="true"><img src="assets/img/hero-glow.svg" alt=""></div>
+  <div class="hero__content">
+    <h1 class="display">Clinic Photo Gallery</h1>
+  </div>
+</section>
+
+<!-- Intro Card -->
+<div class="intro-card">
+  <div style="display:inline-block;padding:6px 14px;background:#e8f5e9;border-radius:999px;color:#1e7e34;font-size:13px;font-weight:600;margin-bottom:12px">
+    100% Real Clinic Photos • Vrindavan Complex, Krishna Nagar
+  </div>
+  <h2 class="display" style="color:#000">Take a Virtual Walkthrough of Our Clinic</h2>
+  <p>Explore our hygienic, fully-equipped physiotherapy facility in Lucknow. Led by Dr. Swati Saxena (MPT Neurology, Gold Medalist) and Dr. Akhilesh Gupta (MPT Musculoskeletal), our clinic features advanced electrotherapy, cervical &amp; lumbar spinal traction, neuro-rehab tools, and private consultation chambers.</p>
+  
+  <!-- Filter tabs -->
+  <div class="gallery-filter" role="tablist" aria-label="Gallery filters">
+    <button class="filter-btn is-active" data-filter="all">All Photos (26)</button>
+    <button class="filter-btn" data-filter="beds">Treatment Stations</button>
+    <button class="filter-btn" data-filter="modalities">Electrotherapy &amp; Modalities</button>
+    <button class="filter-btn" data-filter="exercise">Exercise &amp; Rehab</button>
+    <button class="filter-btn" data-filter="consultation">Consultation &amp; Lounge</button>
+  </div>
+</div>
+
+<!-- Main Gallery Grid -->
+<section class="section" style="padding-top:20px">
+  <div class="container">
+    <div class="gallery-grid" id="gallery-container">
+      
+      <!-- Photo 1 -->
+      <div class="gallery-card" data-category="consultation">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-01.jpg" alt="Clinic Reception and Patient Welcome Desk" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Consultation &amp; Welcome</span>
+          <h3 class="gallery-card__title">Reception &amp; Waiting Lounge</h3>
+        </div>
+      </div>
+
+      <!-- Photo 2 -->
+      <div class="gallery-card" data-category="beds">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-02.jpg" alt="Treatment Station and Examination Bed" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Treatment Station</span>
+          <h3 class="gallery-card__title">Examination &amp; Manual Therapy Bed</h3>
+        </div>
+      </div>
+
+      <!-- Photo 3 -->
+      <div class="gallery-card" data-category="modalities">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-03.jpg" alt="Certified Electrotherapy Modality Unit" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Advanced Modalities</span>
+          <h3 class="gallery-card__title">Multi-Modality Electrotherapy Station</h3>
+        </div>
+      </div>
+
+      <!-- Photo 4 -->
+      <div class="gallery-card" data-category="exercise">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-04.jpg" alt="Shoulder Wheel and Pulley Unit" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Exercise &amp; Rehab</span>
+          <h3 class="gallery-card__title">Upper Limb &amp; Frozen Shoulder Unit</h3>
+        </div>
+      </div>
+
+      <!-- Photo 5 -->
+      <div class="gallery-card" data-category="beds">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-05.jpg" alt="Spinal Traction and Decompression Bed" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Spine Care</span>
+          <h3 class="gallery-card__title">Spinal Decompression &amp; Traction Setup</h3>
+        </div>
+      </div>
+
+      <!-- Photo 6 -->
+      <div class="gallery-card" data-category="beds">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-06.jpg" alt="Manual Mobilization Table" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Treatment Station</span>
+          <h3 class="gallery-card__title">Manual Therapy &amp; Mobilization Area</h3>
+        </div>
+      </div>
+
+      <!-- Photo 7 -->
+      <div class="gallery-card" data-category="exercise">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-07.jpg" alt="Therapy Resistance Bands and Dumbbells" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Exercise &amp; Rehab</span>
+          <h3 class="gallery-card__title">Resistance &amp; Strength Conditioning Unit</h3>
+        </div>
+      </div>
+
+      <!-- Photo 8 -->
+      <div class="gallery-card" data-category="exercise">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-08.jpg" alt="Neurological Gait and Balance Training" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Neuro Rehabilitation</span>
+          <h3 class="gallery-card__title">Balance &amp; Gait Re-education Setup</h3>
+        </div>
+      </div>
+
+      <!-- Photo 9 -->
+      <div class="gallery-card" data-category="modalities">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-09.jpg" alt="Therapeutic Ultrasound Unit" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Advanced Modalities</span>
+          <h3 class="gallery-card__title">Ultrasound &amp; Deep Tissue Healing</h3>
+        </div>
+      </div>
+
+      <!-- Photo 10 -->
+      <div class="gallery-card" data-category="modalities">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-10.jpg" alt="Hydrocollator Moist Heat Pack Therapy" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Thermotherapy</span>
+          <h3 class="gallery-card__title">Hydrocollator Moist Heat Station</h3>
+        </div>
+      </div>
+
+      <!-- Photo 11 -->
+      <div class="gallery-card" data-category="exercise">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-11.jpg" alt="Quadriceps Table for Knee Rehabilitation" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Exercise &amp; Rehab</span>
+          <h3 class="gallery-card__title">Quadriceps &amp; Knee Recovery Table</h3>
+        </div>
+      </div>
+
+      <!-- Photo 12 -->
+      <div class="gallery-card" data-category="beds">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-12.jpg" alt="Ergonomic Patient Couch" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Treatment Station</span>
+          <h3 class="gallery-card__title">Dedicated Patient Treatment Bed</h3>
+        </div>
+      </div>
+
+      <!-- Photo 13 -->
+      <div class="gallery-card" data-category="modalities">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-13.jpg" alt="TENS and IFT Nerve Pain Management" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Advanced Modalities</span>
+          <h3 class="gallery-card__title">IFT &amp; TENS Nerve Stimulator Setup</h3>
+        </div>
+      </div>
+
+      <!-- Photo 14 -->
+      <div class="gallery-card" data-category="exercise">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-14.jpg" alt="Active Exercise Therapy Equipment" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Exercise &amp; Rehab</span>
+          <h3 class="gallery-card__title">Functional Mobility &amp; Active Rehab Zone</h3>
+        </div>
+      </div>
+
+      <!-- Photo 15 -->
+      <div class="gallery-card" data-category="beds">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-15.jpg" alt="Computerized Spinal Traction Bed" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Spine Care</span>
+          <h3 class="gallery-card__title">Computerized Lumbar &amp; Cervical Traction</h3>
+        </div>
+      </div>
+
+      <!-- Photo 16 -->
+      <div class="gallery-card" data-category="exercise">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-16.jpg" alt="Pediatric and Neurological Equipment" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Pediatric &amp; Neuro</span>
+          <h3 class="gallery-card__title">Motor Milestone &amp; Coordination Zone</h3>
+        </div>
+      </div>
+
+      <!-- Photo 17 -->
+      <div class="gallery-card" data-category="consultation">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-17.jpg" alt="Doctor Consultation and Assessment Room" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Consultation</span>
+          <h3 class="gallery-card__title">Clinical Evaluation &amp; History Chamber</h3>
+        </div>
+      </div>
+
+      <!-- Photo 18 -->
+      <div class="gallery-card" data-category="modalities">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-18.jpg" alt="Paraffin Wax Bath for Hand and Joint Pain" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Thermotherapy</span>
+          <h3 class="gallery-card__title">Paraffin Wax Bath for Rheumatoid &amp; Joint Pain</h3>
+        </div>
+      </div>
+
+      <!-- Photo 19 -->
+      <div class="gallery-card" data-category="exercise">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-19.jpg" alt="Physio Gym Ball for Core Stabilization" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Exercise &amp; Rehab</span>
+          <h3 class="gallery-card__title">Gym Ball &amp; Core Muscle Stabilization</h3>
+        </div>
+      </div>
+
+      <!-- Photo 20 -->
+      <div class="gallery-card" data-category="modalities">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-20.jpg" alt="Electrical Muscle Stimulator (EMS)" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Advanced Modalities</span>
+          <h3 class="gallery-card__title">Diagnostic &amp; Therapeutic Muscle Stimulator</h3>
+        </div>
+      </div>
+
+      <!-- Photo 21 -->
+      <div class="gallery-card" data-category="consultation">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-21.jpg" alt="Clinical Hygiene and Patient Care Facility" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Hygiene &amp; Safety</span>
+          <h3 class="gallery-card__title">Sanitization &amp; Patient Care Standards</h3>
+        </div>
+      </div>
+
+      <!-- Photo 22 -->
+      <div class="gallery-card" data-category="beds">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-22.jpg" alt="Comprehensive Physical Therapy Suite" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Treatment Suite</span>
+          <h3 class="gallery-card__title">Complete Physical Therapy Suite Overview</h3>
+        </div>
+      </div>
+
+      <!-- Photo 23 -->
+      <div class="gallery-card" data-category="consultation">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-23.jpg" alt="Senior Consultant Consultation Chamber" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Consultation</span>
+          <h3 class="gallery-card__title">Senior Doctors Private Consultation Room</h3>
+        </div>
+      </div>
+
+      <!-- Photo 24 -->
+      <div class="gallery-card" data-category="beds">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-24.jpg" alt="Post-Surgical Joint Mobilization Station" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Treatment Station</span>
+          <h3 class="gallery-card__title">Post-Surgical Joint Mobilization Station</h3>
+        </div>
+      </div>
+
+      <!-- Photo 25 -->
+      <div class="gallery-card" data-category="beds">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-25.jpg" alt="Cervical Spine Traction Station" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Spine Care</span>
+          <h3 class="gallery-card__title">Cervical Traction &amp; Neck Pain Unit</h3>
+        </div>
+      </div>
+
+      <!-- Photo 26 -->
+      <div class="gallery-card" data-category="consultation">
+        <div class="gallery-card__media">
+          <img class="gallery-card__img" src="assets/img/clinic/clinic-26.jpg" alt="All Is Well Clinic Facility Overview" loading="lazy">
+        </div>
+        <div class="gallery-card__body">
+          <span class="gallery-card__tag">Clinic Facility</span>
+          <h3 class="gallery-card__title">All Is Well Krishna Nagar Centre Facility</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Call to action -->
+<section class="section section--grey">
+  <div class="container" style="text-align:center;max-width:760px;margin-inline:auto">
+    <h2 class="h2">Experience Personalized Physiotherapy Care</h2>
+    <p class="lead muted" style="margin-top:12px;margin-bottom:28px">Visit our clinic at Vrindavan Complex, Infront of Saisoveer Mandir, Krishna Nagar, Lucknow. Book your consultation with Dr. Swati Saxena &amp; Dr. Akhilesh Gupta today.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn--primary" href="contact.html">Book Appointment Online</a>
+      <a class="btn btn--secondary" href="tel:+917985381733">Call +91 79853 81733</a>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Photo Preview">
+  <div class="lightbox__content">
+    <button class="lightbox__close" type="button" aria-label="Close photo preview">&times;</button>
+    <img class="lightbox__img" id="lightbox-image" src="" alt="">
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+  </div>
+</div>
+
+</main>
+<div id="site-footer"></div>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Filter tabs functionality
+  (function () {
+    var buttons = document.querySelectorAll('.filter-btn');
+    var cards = document.querySelectorAll('.gallery-card');
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        buttons.forEach(function (b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        var filter = btn.getAttribute('data-filter');
+
+        cards.forEach(function (card) {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Lightbox modal functionality
+    var lightbox = document.getElementById('gallery-lightbox');
+    var lbImg = document.getElementById('lightbox-image');
+    var lbCaption = document.getElementById('lightbox-caption');
+    var closeBtn = document.querySelector('.lightbox__close');
+
+    cards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        var img = card.querySelector('.gallery-card__img');
+        var title = card.querySelector('.gallery-card__title');
+        if (img && lightbox && lbImg) {
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          lbCaption.textContent = title ? title.textContent : '';
+          lightbox.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    function closeLightbox() {
+      if (lightbox) {
+        lightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+    if (lightbox) {
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) closeLightbox();
+      });
+    }
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox && lightbox.classList.contains('is-open')) {
+        closeLightbox();
+      }
+    });
+  })();
+</script>
+</body>
+</html>

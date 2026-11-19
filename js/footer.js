@@ -29,7 +29,7 @@
           <span class="logo__sub">Neuro, Spine &amp; Rehab</span>
         </span>
       </a>
-      <p style="margin-top:14px;font-size:14px;line-height:22px;color:rgba(255,255,255,0.75)">Rated <strong>5.0 ★</strong> (184+ web ratings) &amp; <strong>4.9 ★</strong> (70+ Google reviews). Expert neurological &amp; spine care by Dr. Swati Saxena &amp; Dr. Akhilesh Gupta.</p>
+      <p style="margin-top:14px;font-size:14px;line-height:22px;color:rgba(255,255,255,0.75)">Rated <strong>5.0 ★</strong> (184+ Google reviews) &amp; <strong>4.9 ★</strong> (70+ Justdial ratings). Expert neurological &amp; spine care by Dr. Swati Saxena &amp; Dr. Akhilesh Gupta.</p>
       <div class="footer-news" style="margin-top:20px">
         <p class="footer-title">Health &amp; Recovery Updates</p>
         <p class="footer-note">Receive expert tips on stroke recovery, spine health, ergonomics, and rehabilitation.</p>
@@ -41,7 +41,7 @@
         </form>
       </div>
     </div>
-    <div class="footer-col"><p class="footer-title">Specialized Treatments</p><ul><li><a href="services.html#neuro">Neurological Physiotherapy</a></li><li><a href="services.html#spinal">Spinal Physiotherapy</a></li><li><a href="services.html#manual">Manual Therapy</a></li><li><a href="services.html#pediatric">Pediatric Physiotherapy</a></li><li><a href="services.html#women">Female / Women's Health</a></li><li><a href="services.html#modalities">Modalities &amp; Facilities</a></li><li><a href="about.html#team">Meet Our Doctors</a></li><li><a href="contact.html">Contact &amp; Timings</a></li></ul></div>
+    <div class="footer-col"><p class="footer-title">Specialized Treatments</p><ul><li><a href="services.html#neuro">Neurological Physiotherapy</a></li><li><a href="services.html#sports">Sports &amp; Musculoskeletal</a></li><li><a href="services.html#spinal">Spinal Physiotherapy</a></li><li><a href="services.html#manual">Manual Therapy</a></li><li><a href="services.html#pediatric">Pediatric Physiotherapy</a></li><li><a href="services.html#women">Female / Women's Health</a></li><li><a href="gallery.html">Clinic Gallery (Photos)</a></li><li><a href="services.html#modalities">Modalities &amp; Facilities</a></li><li><a href="about.html#team">Meet Our Doctors</a></li><li><a href="contact.html">Contact &amp; Timings</a></li></ul></div>
     <div class="footer-col"><p class="footer-title">Clinic Timings</p>
       <ul class="hours">
         <li><span>Morning:</span><span>09:00 AM – 01:00 PM</span></li>
