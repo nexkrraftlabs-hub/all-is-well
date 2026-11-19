@@ -24,7 +24,18 @@
     });
     if (backdrop) backdrop.addEventListener("click", function () { setMenu(false); });
     menu.addEventListener("click", function (e) {
-      if (e.target.closest("a") || e.target.closest(".nav-drawer-close")) setMenu(false);
+      var closeBtn = e.target.closest(".nav-drawer-close");
+      if (closeBtn) {
+        e.preventDefault();
+        setMenu(false);
+        return;
+      }
+      var link = e.target.closest("a");
+      if (link) {
+        setTimeout(function () {
+          setMenu(false);
+        }, 120);
+      }
     });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && body.classList.contains("menu-open")) {
