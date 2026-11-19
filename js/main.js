@@ -24,7 +24,7 @@
     });
     if (backdrop) backdrop.addEventListener("click", function () { setMenu(false); });
     menu.addEventListener("click", function (e) {
-      if (e.target.closest("a")) setMenu(false);
+      if (e.target.closest("a") || e.target.closest(".nav-drawer-close")) setMenu(false);
     });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && body.classList.contains("menu-open")) {
