@@ -25,4 +25,18 @@
   document.querySelectorAll(".nav-pill a[data-page]").forEach(function (a) {
     if (a.getAttribute("data-page").toLowerCase() === file) a.setAttribute("aria-current", "page");
   });
+
+  // Sticky / Scrolled Header state
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var updateHeaderScroll = function () {
+      if (window.scrollY > 20) {
+        header.classList.add("is-scrolled");
+      } else {
+        header.classList.remove("is-scrolled");
+      }
+    };
+    window.addEventListener("scroll", updateHeaderScroll, { passive: true });
+    updateHeaderScroll();
+  }
 })();
